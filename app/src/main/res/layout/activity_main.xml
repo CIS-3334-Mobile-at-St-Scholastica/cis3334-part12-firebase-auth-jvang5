@@ -13,7 +13,7 @@
 
 
     <TextView
-        android:text="Email"
+        android:text="@string/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
@@ -23,13 +23,14 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType=""
         android:ems="10"
         android:id="@+id/editTextEmail"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        tools:ignore="LabelFor" />
 
     <TextView
-        android:text="Password"
+        android:text="@string/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView2"
@@ -39,10 +40,11 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType=""
         android:ems="10"
         android:id="@+id/editTextPassword"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        tools:ignore="LabelFor" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -51,29 +53,32 @@
         android:layout_weight="1">
 
         <Button
-            android:text="Normal Login"
+            android:text="@string/normal_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/buttonLogin"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle,NestedWeights" />
 
         <Button
-            android:text="Create User"
+            android:text="@string/create_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/buttonCreateLogin" />
+            android:id="@+id/buttonCreateLogin"
+            tools:ignore="ButtonStyle" />
 
         <Button
-            android:text="Google Login"
+            android:text="@string/google_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/buttonGoogleLogin"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
 
     </LinearLayout>
 
     <TextView
-        android:text="Status:"
+        android:text="@string/status"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textViewStatus"
@@ -81,7 +86,7 @@
         android:textSize="30sp" />
 
     <Button
-        android:text="Sign Out"
+        android:text="@string/sign_out"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/buttonSignOut"
